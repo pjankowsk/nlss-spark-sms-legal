@@ -9,22 +9,35 @@
     h1 { font-size: 28px; }
     .box { border: 2px solid #111; padding: 16px; margin: 20px 0; }
     label { display: block; margin: 12px 0; }
+    input[type="tel"] { width: 240px; padding: 6px; font-size: 16px; }
+    input[type="checkbox"] { width: 18px; height: 18px; vertical-align: middle; }
+    .consent { font-weight: bold; }
+    button { font-size: 16px; padding: 8px 16px; }
   </style>
 </head>
 <body>
   <h1>SMS Opt-In</h1>
-  <p>This is the public opt-in page for SMS from <strong>Next Level Security Systems, Inc.</strong></p>
-  <p>By completing this form you agree to receive SMS text messages from Next Level Security Systems at the mobile number you provide.</p>
-  <div class="box">
-    <p><strong>Call to action:</strong> Opt in to Next Level Security Systems employee care SMS.</p>
-    <p>Mobile number: ________________________</p>
+  <p>This is the public opt-in page for SMS/text messages from <strong>Next Level Security Systems, Inc.</strong></p>
+  <p>This form is how employees sign up to receive SMS/text messages from Next Level Security Systems.</p>
+
+  <form class="box" action="#" method="get">
+    <p><strong>Call to action:</strong> Sign up to receive SMS/text messages from Next Level Security Systems for employee customer care (IT and operations replies).</p>
     <p>
-      <input type="checkbox" checked disabled />
-      I agree to receive SMS text messages from Next Level Security Systems at the mobile number I entered. Message frequency varies. Message and data rates may apply. Reply STOP to opt out. Reply HELP for help.
+      <label for="mobile">Mobile phone number:</label>
+      <input id="mobile" name="mobile" type="tel" placeholder="(555) 555-5555" />
     </p>
-    <p>Submit / Agree and opt in</p>
-  </div>
-  <p><strong>Keyword opt-in:</strong> Text START or YES to the Next Level Security Systems Twilio number shown in your enrollment instructions. You will receive: Next Level Security Systems: You are now opted in to employee care SMS. Msg and data rates may apply. For help, reply HELP. To opt-out, reply STOP.</p>
+    <p class="consent">
+      <label for="consent">
+        <input id="consent" name="consent" type="checkbox" />
+        I agree to receive SMS/text messages from Next Level Security Systems at the mobile number I entered. Message frequency varies. Message and data rates may apply. Reply STOP to opt out. Reply HELP for help.
+      </label>
+    </p>
+    <p>
+      <button type="submit">Submit / Agree and receive SMS text messages</button>
+    </p>
+  </form>
+
+  <p><strong>Keyword opt-in:</strong> Employees may also text START or YES to (619) 627-0996. They then receive: Next Level Security Systems: You are opted in to employee customer-care SMS. Msg and data rates may apply. Reply STOP to cancel, HELP for help.</p>
   <p>
     <a href="../sms-privacy-policy/">Privacy Policy</a> |
     <a href="../sms-terms/">Terms and Conditions</a>
