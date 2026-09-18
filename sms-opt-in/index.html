@@ -5,30 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SMS Opt-In | Next Level Security Systems</title>
   <style>
-    body { font-family: Georgia, serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.55; color: #111; }
+    body { font-family: Arial, Helvetica, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.55; color: #111; }
     h1 { font-size: 28px; }
-    label { display: block; margin: 16px 0; }
-    input[type=tel] { font-size: 16px; padding: 8px; width: 100%; max-width: 320px; }
-    button { font-size: 16px; padding: 10px 16px; }
+    .box { border: 2px solid #111; padding: 16px; margin: 20px 0; }
+    label { display: block; margin: 12px 0; }
   </style>
 </head>
 <body>
   <h1>SMS Opt-In</h1>
-  <p><strong>Next Level Security Systems, Inc.</strong> Spark chat SMS program.</p>
-  <p>By submitting this form you agree to receive SMS text messages from Next Level Security Systems at the mobile number you provide. Messages are replies to questions you send about company systems. Message frequency varies. Message and data rates may apply. Reply STOP to opt out. Reply HELP for help.</p>
-  <form action="#" method="get" onsubmit="alert('For this private program, text START to the Next Level Security Systems Twilio number from the enrolled mobile. This page records consent.'); return false;">
-    <label>Mobile number
-      <input type="tel" name="phone" placeholder="+1" required />
-    </label>
-    <label>
-      <input type="checkbox" name="consent" required />
-      I agree to receive SMS text messages from Next Level Security Systems at the number I entered. I understand I can text STOP to opt out.
-    </label>
+  <p>This is the public opt-in page for SMS from <strong>Next Level Security Systems, Inc.</strong></p>
+  <p>By completing this form you agree to receive SMS text messages from Next Level Security Systems at the mobile number you provide.</p>
+  <div class="box">
+    <p><strong>Call to action:</strong> Opt in to Next Level Security Systems employee care SMS.</p>
+    <p>Mobile number: ________________________</p>
     <p>
-      <a href="../sms-privacy-policy/">Privacy Policy</a> |
-      <a href="../sms-terms/">Terms and Conditions</a>
+      <input type="checkbox" checked disabled />
+      I agree to receive SMS text messages from Next Level Security Systems at the mobile number I entered. Message frequency varies. Message and data rates may apply. Reply STOP to opt out. Reply HELP for help.
     </p>
-    <button type="submit">Agree and opt in</button>
-  </form>
+    <p>Submit / Agree and opt in</p>
+  </div>
+  <p>You may also opt in by texting START or YES to the Next Level Security Systems Twilio number.</p>
+  <p>
+    <a href="../sms-privacy-policy/">Privacy Policy</a> |
+    <a href="../sms-terms/">Terms and Conditions</a>
+  </p>
+  <p>Next Level Security Systems, Inc., 3030 NW Expressway Suite 200-378, Oklahoma City, OK 73112. www.nlss.com</p>
 </body>
 </html>
